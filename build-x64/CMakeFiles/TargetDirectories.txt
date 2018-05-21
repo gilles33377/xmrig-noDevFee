@@ -1,0 +1,6 @@
+E:/xmrig-noDevFee/build-x64/CMakeFiles/rebuild_cache.dir
+E:/xmrig-noDevFee/build-x64/CMakeFiles/xmrig.dir
+E:/xmrig-noDevFee/build-x64/CMakeFiles/edit_cache.dir
+E:/xmrig-noDevFee/build-x64/src/3rdparty/libcpuid/CMakeFiles/rebuild_cache.dir
+E:/xmrig-noDevFee/build-x64/src/3rdparty/libcpuid/CMakeFiles/cpuid.dir
+E:/xmrig-noDevFee/build-x64/src/3rdparty/libcpuid/CMakeFiles/edit_cache.dir

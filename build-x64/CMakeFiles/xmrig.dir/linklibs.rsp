@@ -1,0 +1,1 @@
+../xmrig-deps/gcc/x64/lib/libuv.a ../xmrig-deps/gcc/x64/lib/libmicrohttpd.a -lws2_32 -lpsapi -liphlpapi -luserenv src/3rdparty/libcpuid/libcpuid.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

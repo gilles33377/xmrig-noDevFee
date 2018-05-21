@@ -1,33 +1,27 @@
-# XMRig
+# XMRig-noDevFee
 
-:warning: **If you mine Monero, Aeon, Sumokoin, Turtlecoin, Stellite, GRAFT, Haven Protocol, IPBC, [PLEASE READ](https://github.com/xmrig/xmrig/issues/482)!** :warning:
+:new:   :free:
 
-[![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub release](https://img.shields.io/github/release/xmrig/xmrig/all.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date-pre/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/releases)
-[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/xmrig/xmrig.svg)](https://github.com/xmrig/xmrig/network)
+**a high performance Monero (XMR) CPU miner *without that annoying developer fee***
 
-XMRig is a high performance Monero (XMR) CPU miner, with official support for Windows.
+no donation, no developer fee
+
+*all profits are completely yours!*
+
+:electric_plug: :arrow_right: :computer: :fast_forward: :moneybag::moneybag::moneybag:
+
+**XMRig-noDevFee** is a high performance Monero (XMR) CPU miner, with official support for Windows.
 Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
-
-* This is the **CPU-mining** version, there is also a [NVIDIA GPU version](https://github.com/xmrig/xmrig-nvidia) and [AMD GPU version]( https://github.com/xmrig/xmrig-amd).
-* [Roadmap](https://github.com/xmrig/xmrig/issues/106) for next releases.
-
-<img src="http://i.imgur.com/OKZRVDh.png" width="619" >
 
 #### Table of contents
 * [Features](#features)
 * [Download](#download)
 * [Usage](#usage)
 * [Algorithm variations](#algorithm-variations)
-* [Build](https://github.com/xmrig/xmrig/wiki/Build)
+* [Build](https://github.com/rdavydov/xmrig-noDevFee/wiki/Build)
 * [Common Issues](#common-issues)
 * [Other information](#other-information)
 * [Donations](#donations)
-* [Release checksums](#release-checksums)
-* [Contacts](#contacts)
 
 ## Features
 * High performance.
@@ -38,17 +32,16 @@ Originally based on cpuminer-multi with heavy optimizations/rewrites and removin
 * keepalived support.
 * Command line options compatible with cpuminer.
 * CryptoNight-Lite support for AEON.
-* Smart automatic [CPU configuration](https://github.com/xmrig/xmrig/wiki/Threads).
+* Smart automatic [CPU configuration](https://github.com/rdavydov/xmrig-noDevFee/wiki/Threads).
 * Nicehash support
 * It's open source software.
 
 ## Download
-* Binary releases: https://github.com/xmrig/xmrig/releases
-* Git tree: https://github.com/xmrig/xmrig.git
-  * Clone with `git clone https://github.com/xmrig/xmrig.git` :hammer: [Build instructions](https://github.com/xmrig/xmrig/wiki/Build).
+* Binary releases: https://github.com/rdavydov/xmrig-noDevFee/releases
+* Git tree: https://github.com/rdavydov/xmrig-noDevFee.git
+  * Clone with `git clone https://github.com/rdavydov/xmrig-noDevFee.git` :hammer: [Build instructions](https://github.com/rdavydov/xmrig-noDevFee/wiki/Build).
 
 ## Usage
-Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or share configurations.
 
 ### Options
 ```
@@ -67,7 +60,7 @@ Use [config.xmrig.com](https://config.xmrig.com/xmrig) to generate, edit or shar
       --no-huge-pages      disable huge pages support
       --no-color           disable colored output
       --variant            algorithm PoW variant
-      --donate-level=N     donate level, default 5% (5 minutes in 100 minutes)
+      --donate-level=N     donate level, default 0%
       --user-agent         set custom user-agent string for pool
   -B, --background         run the miner in the background
   -c, --config=FILE        load a JSON-format configuration file
@@ -95,13 +88,13 @@ Since version 0.8.0.
 
 ## Common Issues
 ### HUGE PAGES unavailable
-* Run XMRig as Administrator.
-* Since version 0.8.0 XMRig automatically enables SeLockMemoryPrivilege for current user, but reboot or sign out still required. [Manual instruction](https://msdn.microsoft.com/en-gb/library/ms190730.aspx).
+* Run XMRig-noDevFee as Administrator.
+* Since version 0.8.0 XMRig-noDevFee automatically enables SeLockMemoryPrivilege for current user, but reboot or sign out still required. [Manual instruction](https://msdn.microsoft.com/en-gb/library/ms190730.aspx).
 
 ## Other information
 * No HTTP support, only stratum protocol support.
 * No TLS support.
-* Default donation 5% (5 minutes in 100 minutes) can be reduced to 1% via command line option `--donate-level`.
+* No dev fee – **Default donation *0%*** :new:   :free:.
 
 
 ### CPU mining performance
@@ -118,18 +111,5 @@ Please note performance is highly dependent on system load. The numbers above ar
 * Enable fast memory (Large/Huge pages).
 
 ## Donations
-* XMR: `48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD`
-* BTC: `1P7ujsXeX7GxQwHNnJsRMgAdNkFZmNVqJT`
-
-## Release checksums
-### SHA-256
-```
-f8e1957e8bfd7f281a76d1e42694049c67f39dea90ac36e9d589c14cdf8924bc xmrig-2.6.1-xenial-amd64.tar.gz/xmrig-2.6.1/xmrig
-472c7aaf5aacc1212bfd3f2f96daca4f42d64e2d0db0872891328e7d8503d0c8 xmrig-2.6.1-gcc-win32.zip/xmrig.exe
-d53154cef24c884b2be539ac13bfb6e7dba6bbc53b62e91f2877637d43fa4b15 xmrig-2.6.1-gcc-win64.zip/xmrig.exe
-a253381b617463e6e1193d49b8afbf720a1c376621da7429d97f192668cd59ad xmrig-2.6.1-msvc-win64.zip/xmrig.exe
-```
-
-## Contacts
-* support@xmrig.com
-* [reddit](https://www.reddit.com/user/XMRig/)
+* XMR: `46fzadEigE7B3kyJB6AdiccaTha3SWUdTNnE4FL6YtjCgYMASAyXGkMe1XY4iApv2VDSxBT6d8PTW3vwtNWnfu6W4g4jyJF`
+* BTC: `15rY3ewZ2W3HKokyLJ8Ze1WB23YgNncfpR`
