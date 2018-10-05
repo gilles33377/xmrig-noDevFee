@@ -13,6 +13,8 @@ no donation, no developer fee
 **XMRig-noDevFee** is a high performance Monero (XMR) CPU miner, with official support for Windows.
 Originally based on cpuminer-multi with heavy optimizations/rewrites and removing a lot of legacy code, since version 1.0.0 completely rewritten from scratch on C++.
 
+***This new version is ready for Monero's change of PoW algorithm on October 18.***
+
 #### Table of contents
 * [Features](#features)
 * [Download](#download)
